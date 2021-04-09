@@ -8,6 +8,7 @@ export const taskListSlice = createSlice({
     reducers: {
         addTask: (state, action) => {
             state.taskList.push(action.payload);
+            
         },
         // Action payload here must be the index of the task in the array
         // that is being removed.

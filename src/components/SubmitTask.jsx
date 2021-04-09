@@ -5,9 +5,21 @@ import { addTask } from '../state/taskList/taskListSlice';
 
 import './SubmitTask.css';
 
-const SubmitTask = (props) => {
-    // Get access to the dispatch using useDispatch() from 'react-redux'.
-    const dispatch = useDispatch();
+
+
+const SubmitTask = (props)  => {
+   
+       
+    })
+    
+// Get access to the dispatch using useDispatch() from 'react-redux'.
+const [input, setInput] = useState('');
+SubmitTask({
+item: input,
+value: '',
+id: Date.now(),
+
+const dispatch = useDispatch();
     const [newTask, setNewTask] = useState({ completed: false });
 
     const handleSubmit = (e) => {
